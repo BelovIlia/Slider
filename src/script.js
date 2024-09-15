@@ -1,3 +1,4 @@
+
 const info = [
   {
 
@@ -80,6 +81,18 @@ arrowNextElement.onclick = function (e) {
   UpdateTabColor(index);
 
 }
+
+function autoTurnower(e) {
+  if (index == 2) {
+    index = 0;
+  } else {
+    index = index + 1;
+  }
+  UpdateSliderData(index);
+  UpdateTabColor(index);
+}
+
+setInterval(autoTurnower, 3000);
 
 // нажатие на левую точку 
 
